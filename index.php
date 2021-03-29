@@ -36,7 +36,7 @@ $queried_post = get_post($post_id);?>
 <?php echo get_the_post_thumbnail($queried_post, 'full', array('class' => 'img-responsive')); ?>
 <h4><?php echo $queried_post->post_title; ?></h4>
 <?php echo $queried_post->post_excerpt; ?>
-<?php echo '<a class="readmore" href="'.get_permalink($queried_post).'"><br>CONTINUE READING</a>';?>                       </div>
+<?php echo '<a class="readmore" href=".get_permalink($queried_post).'"><br>CONTINUE READING</a>';?>                       </div>
             </div>
             <div class="col-md-4 article-cent">
                 <img class="img-responsive" alt=“portait” src="http://206.189.45.97/~mesh16/wp-content/uploads/portrait1.jpg">
