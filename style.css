@@ -132,6 +132,7 @@ footer{
     color: #a19ba6;
     font-size: 0.9em;
    margin-bottom: 40px; 
+    display:block;
 }
 .footer-content{
    
