@@ -47,6 +47,14 @@ color:darkorange;
     
 }
 
+.small_herobg{
+    width:100%;
+    background: url(images/small_header_bg.jpg)no-repeat center center;
+    background-size: cover ;/*make the background image cover the whole div proportionally*/
+    height: 40vh;
+    
+}
+
 .herobg h1{
     font-family: 'Raleway', sans-serif;
    float:right; /* float the text to the right*/
