@@ -20,6 +20,9 @@ wp_reset_query();?>
 
         </div>
     </section>
+    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('main_tag') ) : 
+endif; ?>
+
 
 
 
