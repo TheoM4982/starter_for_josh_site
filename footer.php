@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center footer-content">
-<p><?php bloginfo('name');?></p>
+<p> <?php bloginfo('name');?></p>
                 <img src="http://206.189.45.97/~mesh16/wp-content/uploads/tumblr.jpg" alt=“tumblr” >
                 <img src="http://206.189.45.97/~mesh16/wp-content/uploads/rss.jpg" alt=“rss” >
             </div>
