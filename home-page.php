@@ -9,9 +9,8 @@
         <div class="container">
 <!--placeholder for about me  -->
 <h2 class="animated fadeInLeft"><?php the_field('titleforaboutme'); ?></h2><!--  custom field for the aboutme content-->
-           <p class="particle animated fadeInRight">
-<?php the_field('subtitleforaboutme'); ?></p>
-<p class="about-text"><?php the_field('paragraphforaboutme'); ?></p>
+           <p class="particle animated fadeInRight"><?php the_field('subtitleforaboutme'); ?></p>
+           <p class="about-text"><?php the_field('paragraphforaboutme'); ?></p>
             <div class="blocker"></div>
 
         </div>
@@ -56,9 +55,9 @@
 
            
 
-</div><!-- row-->
-</div><!-- container-->
-</section><!-- container-fluid-->
+        </div><!-- row-->
+        </div><!-- container-->
+    </section><!-- container-fluid-->
 <?php get_footer();/* Tells WordPress to include footer.php */ ?>
 
 
