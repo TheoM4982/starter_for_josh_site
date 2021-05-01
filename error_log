@@ -29,4 +29,15 @@
 [29-Mar-2021 09:18:48 UTC] PHP Parse error:  syntax error, unexpected '"><br>CONTINUE READING</a>';?>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/mesh16/public_html/wp-content/themes/starter_for_josh_site/index.php on line 41
 [29-Mar-2021 09:18:50 UTC] PHP Parse error:  syntax error, unexpected '"><br>CONTINUE READING</a>';?>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/mesh16/public_html/wp-content/themes/starter_for_josh_site/index.php on line 41
 [29-Mar-2021 09:18:51 UTC] PHP Parse error:  syntax error, unexpected '"><br>CONTINUE READING</a>';?>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/mesh16/public_html/wp-content/themes/starter_for_josh_site/index.php on line 41
-[29-Mar-2021 09:19:07 UTC] PHP Parse error:  syntax error, unexpected '"><br>CONTINUE READING</a>';?>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/mesh16/public_html/wp-content/themes/starter_for_josh_site/index.php on line 41
+[29-Mar-2021 09:19:07 UTC] PHP Parse error:  syntax error, unexpected '"><br>CONTINUE READING</a>';?>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home4/mesh16/public_html/wp-content/themes/starter_for_josh_site/index.php on line 41// Enable WP_DEBUG mode
+define( 'WP_DEBUG', true );
+
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', true );
+
+// Disable display of errors and warnings
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+
+// Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
+define( 'SCRIPT_DEBUG', true );
