@@ -70,7 +70,7 @@
 
 
         <!--Div for the main image stretches to the edge of the page -->
-        <div class="container">
+        <div class="container animated fadeInRight">
             <!--Div that holds the content in the middle of the page-->
             <h1><?php the_field('maintagline'); ?></h1>
             <!--the main tag line-->
