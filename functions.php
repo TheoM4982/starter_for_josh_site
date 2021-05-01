@@ -6,6 +6,7 @@ wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css' );
      wp_enqueue_style( 'tester', get_stylesheet_directory_uri() . '/css/animate.min.css');
 wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), null, false);
 wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.0.0', true );
+wp_enque_script ( 'wow', get_stylesheet_directionary_uri() . '/js/wow.min.js', array(), '', true ();
 }
  
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
@@ -31,16 +32,30 @@ add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
 ?>
 <?php
 function tagline() {
-
-	register_sidebar( array(
-		'name'          => 'main tagline',
-		'id'            => 'main_tag',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
+register_sidebar( array(
+'name'          => 'main tagline',
+'id'            => 'main_tag',
+'before_widget' => '<div>',
+'after_widget'  => '</div>',
+'before_title'  => '<h2 class="rounded">',
+'after_title'   => '</h2>',
 	) );
-
 }
 add_action( 'widgets_init', 'tagline' );
 ?>
+
+
+<?php
+add_action('wp_enqueue_scripts', 'sk_wow_init_in_footer');
+
+function sk_wow_init_in_footer (){
+    add_action( 'print_footer_scripts', 'wow_init');
+}
+                 
+//* Add Javascript before </body>
+
+function wow_init() { ?>
+<script type="text/javascript">
+new WOW().init();
+</script>
+<?php}
