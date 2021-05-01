@@ -59,3 +59,4 @@ function wow_init() { ?>
 new WOW().init();
 </script>
 <?php}
+?>
